@@ -1,8 +1,11 @@
-table = $('#movieDataTable').DataTable({
-    "paging": true
-});
-
 $(document).ready(function() {
+
+    //set paging to true
+    table = $('#movieDataTable').DataTable({
+        "paging": true
+    });
+
+
     $.ajax({
         type: 'GET',
         url: 'https://data.sfgov.org/resource/wwmu-gmzc.json',
